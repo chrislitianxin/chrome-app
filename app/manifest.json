@@ -1,0 +1,25 @@
+{
+  "name": "outlook_notifier",
+  "manifest_version": 2,
+  "description": "a simpler way to check your hotmail",
+  "version": "0.0.3",
+  "author": "Chris",
+  "minimum_chrome_version": "23",
+  "browser_action": {
+         "default_icon": {
+           "19": "assets/icon_16.png",
+           "38": "assets/icon_128.png"
+         },
+         "default_name": "Outlook"
+
+       },
+  "background": {
+      "persistent": false,
+    "scripts": ["background.js"]
+
+  },
+  "permissions": [
+    "https://outlook.live.com/*",
+    "tabs"
+  ]
+}
